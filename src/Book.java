@@ -1,11 +1,11 @@
-public class Book {
-    String bookName;
+public class Book extends Literature {
+
     Author author;
-    Double price;
+
     Integer pages;
 
     public Book(String bookName, Author author, Double price, Integer pages) {
-        this.bookName = bookName;
+        this.name = bookName;
         this.author = author;
         this.price = price;
         this.pages = pages;
@@ -14,7 +14,7 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "bookName='" + bookName + '\'' +
+                "name='" + name + '\'' +
                 ", author='" + author + '\'' +
                 ", price=" + price +
                 ", pages=" + pages +
